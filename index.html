@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/output.css">
+    <link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css">
+    <title>E wallet</title>
+</head>
+
+<body class="bg-main/10  overflow-y-hidden">
+    <div class="container  md:max-w-sm mx-auto">
+        <!-- nav bar star -->
+        <nav class="fixed bottom-0 w-full z-[100] md:max-w-sm" id="nav-button">
+            <section class="nav-bar-bottom">
+                <div class="w-full h-16 bg-white flex flex-row">
+                    <a href="#" class="flex flex-col justify-center items-center w-full h-full font-bold group">
+                        <span class="relative flex">
+                            <span>
+                                <i class="bi bi-house-door"></i>
+                            </span>
+                            <span class="absolute opacity-0 group-hover:opacity-100 duration-300">
+                                <i class="bi bi-house-door-fill"></i>
+                            </span>
+                        </span>
+                        <span>Home</span>
+                    </a>
+
+                    <a href="" id="riwayat"
+                        class="flex flex-col justify-center items-center w-full h-full font-bold group">
+                        <span class="relative flex">
+                            <span>
+                                <i class="bi-hdd-rack"></i>
+                            </span>
+                            <span class="absolute opacity-0 group-hover:opacity-100 duration-300">
+                                <i class="bi bi-hdd-rack-fill"></i>
+                            </span>
+                        </span>
+                        <span>Riwayat</span>
+                    </a>
+
+                    <a href="" id="akun"
+                        class="flex flex-col justify-center items-center w-full h-full font-bold group">
+                        <span class="relative flex">
+                            <span>
+                                <i class="bi bi-person"></i>
+                            </span>
+                            <span class="absolute opacity-0 group-hover:opacity-100 duration-300">
+                                <i class="bi bi-person-fill"></i>
+                            </span>
+                        </span>
+                        <span>Akun</span>
+                    </a>
+                </div>
+            </section>
+        </nav>
+        <!-- nav bar end -->
+        <!-- head star -->
+        <div class="container ">
+            <header class="mx-auto sm:max-w-sm">
+                <div class="head p-3 flex flex-row gap-3">
+                    <div class="w-8 h-8">
+                        <img src="src/img/gambar/WhatsApp Image 2024-05-02 at 20.12.07_da52eb16.jpg" alt=""
+                            class="h-full w-full object-cover rounded-full">
+                    </div>
+                    <span class="text-[18px] font-bold ">Akbar Maulana</span>
+                </div>
+            </header>
+            <!-- head end -->
+            <main class="mx-auto sm:max-w-sm">
+                <!-- saldo dana star -->
+                <section class="card-balacnce w-full px-3 ">
+                    <div
+                        class="w-full  h-41 flex flex-col justify-between bg-linear-to-t from-amber-500/80 to-amber-500 rounded-xl p-5">
+                        <span class="text-2xl font-bold text-white">DanaKu</span>
+                        <div class="flex gap-3 text-white items-center">
+                            <span class=" text-2xl text-white">Rp <span id="saldo">56.094.343</span></span>
+                            <button class="text-3xl relative cursor-pointer" id="eye-button">
+                                <i class="bi bi-eye "></i>
+                                <i class="bi bi-eye-slash left-0 absolute hidden"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <!-- saldo dana end -->
+                <!-- btn topUP and send star -->
+                <section class="top-up-send flex gap-3 my-4 flex-row-reverse px-3 md:max-w-sm">
+                    <button id="btn-tranfer"
+                        class="p-[10px] bg-main w-52 rounded-2xl flex justify-center gap-2.5 text-white hover:bg-mainhover duration-200 focus:ring-fokus disabled:bg-slate-200 disabled:text-slate-400 disabled:cursor-not-allowed cursor-pointer">
+                        <span class="h-4 w-4">
+                            <i class="bi bi-download"></i>
+                        </span>
+                        <span class="uppercase"> Transfer </span>
+                    </button>
+                    <button id="btn-topUp"
+                        class="p-[10px] bg-transparent w-52 border-main border-2 rounded-2xl flex justify-center gap-2.5 text-main hover:text-white hover:bg-main duration-200 focus:ring-main disabled:saturate-0 disabled:bg-transparent disabled:cursor-not-allowed disabled:opacity-90 cursor-pointer">
+                        <span class="h-4 w-4">
+                            <i class="bi bi-download"></i>
+                        </span>
+                        <span class="uppercase"> Top up </span>
+                    </button>
+                </section>
+                <!-- btn topUP and send end -->
+                <!-- Riwayat Tranksaksi star -->
+                <section class=" px-3 w-full max-h-max bg-white p-1 rounded-2xl md:max-w-sm">
+
+                    <head class="riwayat-transaksi-head">
+                        <div class="h-17 bg-white w-full rounded-2xl flex justify-between items-center px-2.5">
+                            <span class="text-md font-semibold">Riwayat Transasksi</span>
+                            <span class="text-sm text-main">
+                                <button><a href="">Lihat Lainnya</a></button>
+                            </span>
+                        </div>
+                    </head>
+                    <section class="devider overflow-y-scroll max-h-90 pb-9">
+                        <div id="Riwayat-transaksi"
+                            class="w-full bg-white h-[60px] rounded-2xl flex justify-between items-center focus:bg-main hover:bg-main/10">
+                            <div class="flex flex-row justify-center gap-2 items-center">
+                                <button class="mx-3 cursor-pointer text-main text-xl w-max h-max">
+                                    <i class="bi bi-download"></i>
+                                </button>
+                                <div class="flex flex-col py-2 box-border">
+                                    <span class="text-sm font-semibold block py-3">William
+                                        <span class="block opacity-50">123456789</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <span class="text-minus font-semibold">- Rp.154.000,00</span>
+                                <button class="cursor-pointer text-xl">
+                                    <span class="mx-3"><i class="bi bi-caret-right"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                        <hr class="text-amber-300 w-11/12 m-auto">
+                        <div id="Riwayat-transaksi"
+                            class="w-full bg-white h-[60px] rounded-2xl flex justify-between items-center focus:bg-main hover:bg-main/10">
+                            <div class="flex flex-row justify-center gap-2 items-center">
+                                <button class="mx-3 cursor-pointer text-main text-xl w-max h-max">
+                                    <i class="bi bi-download"></i>
+                                </button>
+                                <div class="flex flex-col py-2 box-border">
+                                    <span class="text-sm font-semibold block py-3">Dolf
+                                        <span class="block opacity-50">234362784</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <span class="text-plus font-semibold">+ Rp.200.000,00</span>
+                                <button class="cursor-pointer text-xl">
+                                    <span class="mx-3"><i class="bi bi-caret-right"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                        <hr class="text-amber-300 w-11/12 m-auto">
+                        <div id="Riwayat-transaksi"
+                            class="w-full bg-white h-[60px] rounded-2xl flex justify-between items-center focus:bg-main hover:bg-main/10">
+                            <div class="flex flex-row justify-center gap-2 items-center">
+                                <button class="mx-3 cursor-pointer text-main text-xl w-max h-max">
+                                    <i class="bi bi-download"></i>
+                                </button>
+                                <div class="flex flex-col py-2 box-border">
+                                    <span class="text-sm font-semibold block py-3">Emma
+                                        <span class="block opacity-50">985374278</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <span class="text-minus font-semibold">- Rp.100.000,00</span>
+                                <button class="cursor-pointer text-xl">
+                                    <span class="mx-3"><i class="bi bi-caret-right"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                        <hr class="text-amber-300 w-11/12 m-auto">
+                        <div id="Riwayat-transaksi"
+                            class="w-full bg-white h-[60px] rounded-2xl flex justify-between items-center focus:bg-main hover:bg-main/10">
+                            <div class="flex flex-row justify-center gap-2 items-center">
+                                <button class="mx-3 cursor-pointer text-main text-xl w-max h-max">
+                                    <i class="bi bi-download"></i>
+                                </button>
+                                <div class="flex flex-col py-2 box-border">
+                                    <span class="text-sm font-semibold block py-3">Cristiano Ronaldo
+                                        <span class="block opacity-50">777777777</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <span class="text-plus font-semibold">+ Rp.500.000</span>
+                                <button class="cursor-pointer text-xl">
+                                    <span class="mx-3"><i class="bi bi-caret-right"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                        <hr class="text-amber-300 w-11/12 m-auto">
+                        <div id="Riwayat-transaksi"
+                            class="w-full bg-white h-[60px] rounded-2xl flex justify-between items-center focus:bg-main hover:bg-main/10">
+                            <div class="flex flex-row justify-center gap-2 items-center">
+                                <button class="mx-3 cursor-pointer text-main text-xl w-max h-max">
+                                    <i class="bi bi-download"></i>
+                                </button>
+                                <div class="flex flex-col py-2 box-border">
+                                    <span class="text-sm font-semibold block py-3">Lionel Messi
+                                        <span class="block opacity-50">111222333</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <span class="text-plus font-semibold">+ Rp.300.000,00</span>
+                                <button class="cursor-pointer text-xl">
+                                    <span class="mx-3"><i class="bi bi-caret-right"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                        <hr class="text-amber-300 w-11/12 m-auto">
+
+                        <div id="Riwayat-transaksi"
+                            class="w-full bg-white h-[60px] rounded-2xl flex justify-between items-center focus:bg-main hover:bg-main/10">
+                            <div class="flex flex-row justify-center gap-2 items-center">
+                                <button class="mx-3 cursor-pointer text-main text-xl w-max h-max">
+                                    <i class="bi bi-download"></i>
+                                </button>
+                                <div class="flex flex-col py-2 box-border">
+                                    <span class="text-sm font-semibold block py-3">Neymar Jr
+                                        <span class="block opacity-50">444555666</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <span class="text-minus font-semibold">- Rp.50.000,00</span>
+                                <button class="cursor-pointer text-xl">
+                                    <span class="mx-3"><i class="bi bi-caret-right"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                        <hr class="text-amber-300 w-11/12 m-auto">
+
+                        <div id="Riwayat-transaksi"
+                            class="w-full bg-white h-[60px] rounded-2xl flex justify-between items-center focus:bg-main hover:bg-main/10">
+                            <div class="flex flex-row justify-center gap-2 items-center">
+                                <button class="mx-3 cursor-pointer text-main text-xl w-max h-max">
+                                    <i class="bi bi-download"></i>
+                                </button>
+                                <div class="flex flex-col py-2 box-border">
+                                    <span class="text-sm font-semibold block py-3">Kylian Mbappé
+                                        <span class="block opacity-50">777888999</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <span class="text-plus font-semibold">+ Rp.250.000,00</span>
+                                <button class="cursor-pointer text-xl">
+                                    <span class="mx-3"><i class="bi bi-caret-right"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                        <hr class="text-amber-300 w-11/12 m-auto">
+
+                        <div id="Riwayat-transaksi"
+                            class="w-full bg-white h-[60px] rounded-2xl flex justify-between items-center focus:bg-main hover:bg-main/10">
+                            <div class="flex flex-row justify-center gap-2 items-center">
+                                <button class="mx-3 cursor-pointer text-main text-xl w-max h-max">
+                                    <i class="bi bi-download"></i>
+                                </button>
+                                <div class="flex flex-col py-2 box-border">
+                                    <span class="text-sm font-semibold block py-3">Sadio Mané
+                                        <span class="block opacity-50">222333444</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <span class="text-minus font-semibold">- Rp.75.000,00</span>
+                                <button class="cursor-pointer text-xl">
+                                    <span class="mx-3"><i class="bi bi-caret-right"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                        <hr class="text-amber-300 w-11/12 m-auto">
+                    </section>
+                </section>
+                <!-- riwayat Tranksaksi end -->
+            </main>
+            <!-- top-up star -->
+            <section
+                class="w-screen bg-slate-700/50 backdrop-blur-md h-screen justify-end flex-col gap-10 z-50 fixed bottom-0 hidden md:max-w-sm"
+                id="top-up-popUP">
+                <div class=" flex flex-col gap-10">
+                    <div class="self-end">
+                        <button id="closePoup"
+                            class="p-[10px] font-bold  bg-white w-45 text-sm rounded-2xl flex justify-center gap-2.5 text-main hover:text-white  hover:bg-main/50 duration-200 focus:ring-main disabled:saturate-0 disabled:bg-transparent disabled:cursor-not-allowed disabled:opacity-90 cursor-pointer">
+                            <span class="h-4 w-4">
+                                <i class="bi bi-x-lg"></i>
+                            </span>
+                            <span class="uppercase"> Close </span>
+                        </button>
+                    </div>
+                    <div class="flex flex-col gap-10 bg-white rounded-t-4xl p-5">
+                        <div class="flex w-full items-center rounded-2xl gap-2 relative my-4 ">
+                            <label for="Cari" class="mx-2 absolute">
+                                <i class="bi bi-wallet2"></i>
+                            </label>
+                            <div class="flex w-full flex-col gap-3">
+                                <input type="text" name="search" id="Cari" placeholder="Nominal"
+                                    class="w-full h-12 rounded-2xl focus:ring-fokus px-10 invalid:bg-minus/10 invalid:text-minus text-slate-400 bg-white peer border" />
+                                <p class="absolute hidden peer-invalid:block text-minus top-13">
+                                    Masukkan nominal dengan benar
+                                </p>
+                            </div>
+                        </div>
+                        <button
+                            class="p-[10px] bg-main  rounded-2xl flex w-full justify-center gap-2.5 text-white hover:bg-mainhover duration-200 focus:ring-fokus disabled:bg-slate-200 disabled:text-slate-400 disabled:cursor-not-allowed cursor-pointer flex-row-reverse">
+                            <span class="h-4 w-4 rotate-45">
+                                <i class="bi bi-send"></i>
+                            </span>
+                            <span class="uppercase"> Top Up </span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- top up end -->
+            <!-- Transfer pop up star-->
+            <section
+                class="w-screen bg-slate-700/50 backdrop-blur-md h-screen justify-end  flex-col  z-50 fixed bottom-0 hidden md:max-w-sm"
+                id="Transfer-popUp">
+                <div class=" flex flex-col gap-10">
+                    <div class="self-end flex justify-between w-full gap-36 px-3 items-center">
+                        <button id="kembali-popUp"
+                            class="p-[10px] font-bold  bg-white w-full text-sm rounded-2xl flex justify-center gap-2.5 text-main hover:text-white  hover:bg-main/50 duration-200 focus:ring-main disabled:saturate-0 disabled:bg-transparent disabled:cursor-not-allowed disabled:opacity-90 cursor-pointer">
+                            <span class="h-4 w-4">
+                                <i class="bi bi-arrow-left"></i>
+                            </span>
+                            <span class="uppercase"> back </span>
+                        </button>
+                        <button id="closePoup-transfer"
+                            class="p-[10px] font-bold  bg-white w-full text-sm rounded-2xl flex justify-center gap-2.5 text-main hover:text-white  hover:bg-main/50 duration-200 focus:ring-main disabled:saturate-0 disabled:bg-transparent disabled:cursor-not-allowed disabled:opacity-90 cursor-pointer">
+                            <span class="h-4 w-4">
+                                <i class="bi bi-x-lg"></i>
+                            </span>
+                            <span class="uppercase"> Close </span>
+                        </button>
+                    </div>
+                    <div class="flex flex-col gap-10 bg-white rounded-t-4xl p-5">
+                        <div class="flex w-full items-center rounded-2xl gap-2 relative my-4 ">
+                            <label for="Cari" class="mx-2 absolute">
+                                <i class="bi bi-search"></i>
+                            </label>
+                            <div class="flex w-full flex-col gap-3">
+                                <input type="text" name="search" id="Cari" placeholder="Cari nama orang / rekening"
+                                    class="w-full h-12 rounded-2xl focus:ring-fokus px-10 invalid:bg-minus/10 invalid:text-minus text-slate-400 bg-white peer border" />
+                                <p class="absolute hidden peer-invalid:block text-minus top-13">
+                                    Id tidak di temukan
+                                </p>
+                            </div>
+                        </div>
+                        <!-- riwayat Transfer akun star -->
+                        <section class=" w-full max-h-max bg-white p-1">
+                            <div id="RiwayatTfakun"
+                                class="bg-white max-h-max w-full flex items-center justify-between hover:bg-main/10 rounded-2xl duration-300">
+                                <div class="h-18 flex items-center">
+                                    <button class="mx-4 relative group cursor-pointer text-2xl">
+                                        <i class="bi bi-person group-hover:opacity-0 duration-300"></i>
+                                        <i
+                                            class="bi bi-person-fill absolute left-0 opacity-0 group-hover:opacity-100 duration-300"></i>
+                                    </button>
+                                    <div class="flex flex-col">
+                                        <span class="text-md block">John Doe</span>
+                                        <span class="text-xs block">123456789</span>
+                                    </div>
+                                </div>
+                                <div class="h-18 flex items-center mx-4 text-2xl relative group ">
+                                    <button><i class="bi bi-caret-right "></i></button>
+                                    <button
+                                        class="absolute opacity-0 group-hover:opacity-100 duration-300 cursor-pointer"><i
+                                            class="bi bi-caret-right-fill"></i></button>
+                                </div>
+                            </div>
+                            <hr class="text-amber-300 w-11/12 m-auto">
+                            <div id="RiwayatTfakun"
+                                class="bg-white max-h-max w-full flex items-center justify-between hover:bg-main/10 rounded-2xl duration-300">
+                                <div class="h-18 flex items-center">
+                                    <button class="mx-4 relative group cursor-pointer text-2xl">
+                                        <i class="bi bi-person group-hover:opacity-0 duration-300"></i>
+                                        <i
+                                            class="bi bi-person-fill absolute left-0 opacity-0 group-hover:opacity-100 duration-300"></i>
+                                    </button>
+                                    <div class="flex flex-col">
+                                        <span class="text-md block">Jane Smith</span>
+                                        <span class="text-xs block">987654321</span>
+                                    </div>
+                                </div>
+                                <div class="h-18 flex items-center mx-4 text-2xl relative group ">
+                                    <button><i class="bi bi-caret-right "></i></button>
+                                    <button
+                                        class="absolute opacity-0 group-hover:opacity-100 duration-300 cursor-pointer"><i
+                                            class="bi bi-caret-right-fill"></i></button>
+                                </div>
+                            </div>
+                            <hr class="text-amber-300 w-11/12 m-auto">
+                            <div id="RiwayatTfakun"
+                                class="bg-white max-h-max w-full flex items-center justify-between hover:bg-main/10 rounded-2xl duration-300">
+                                <div class="h-18 flex items-center">
+                                    <button class="mx-4 relative group cursor-pointer text-2xl">
+                                        <i class="bi bi-person group-hover:opacity-0 duration-300"></i>
+                                        <i
+                                            class="bi bi-person-fill absolute left-0 opacity-0 group-hover:opacity-100 duration-300"></i>
+                                    </button>
+                                    <div class="flex flex-col">
+                                        <span class="text-md block">Alice Johnson</span>
+                                        <span class="text-xs block">456789123</span>
+                                    </div>
+                                </div>
+                                <div class="h-18 flex items-center mx-4 text-2xl relative group ">
+                                    <button><i class="bi bi-caret-right "></i></button>
+                                    <button
+                                        class="absolute opacity-0 group-hover:opacity-100 duration-300 cursor-pointer"><i
+                                            class="bi bi-caret-right-fill"></i></button>
+                                </div>
+                            </div>
+                            <hr class="text-amber-300 w-11/12 m-auto">
+                            <div id="RiwayatTfakun"
+                                class="bg-white max-h-max w-full flex items-center justify-between hover:bg-main/10 rounded-2xl duration-300">
+                                <div class="h-18 flex items-center">
+                                    <button class=" mx-4 relative group cursor-pointer text-2xl">
+                                        <i class="bi bi-person group-hover:opacity-0 duration-300"></i>
+                                        <i
+                                            class="bi bi-person-fill absolute left-0 opacity-0 group-hover:opacity-100 duration-300"></i>
+                                    </button>
+                                    <div class="flex flex-col">
+                                        <span class="text-md block">Bob Brown</span>
+                                        <span class="text-xs block">321654987</span>
+                                    </div>
+                                </div>
+                                <div class="h-18 flex items-center mx-4 text-2xl relative group ">
+                                    <button><i class="bi bi-caret-right "></i></button>
+                                    <button
+                                        class="absolute opacity-0 group-hover:opacity-100 duration-300 cursor-pointer"><i
+                                            class="bi bi-caret-right-fill"></i></button>
+                                </div>
+
+                        </section>
+                        <!-- riwayat Transfer end -->
+                        <button
+                            class="p-[10px] bg-main  rounded-2xl flex w-full justify-center gap-2.5 text-white hover:bg-mainhover duration-200 focus:ring-fokus disabled:bg-slate-200 disabled:text-slate-400 disabled:cursor-not-allowed cursor-pointer flex-row-reverse">
+                            <span class="h-4 w-4">
+                                <i class="bi bi-search"></i>
+                            </span>
+                            <span class="uppercase"> Cari Sekarang </span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Transfer pop up end -->
+        </div>
+        <!-- riwayat transaksi -->
+        <div class="container w-full h-screen flex-col gap-10 absolute top-0 z-50 bg-main/50 backdrop-blur-lg hidden md:max-w-sm"
+            id="riwayat-main">
+            <section class="riwayat-transaksi w-full fixed ">
+                <div class="h-17 bg-white w-full  flex gap-5 items-center px-2.5">
+                    <button class="cursor-pointer" id="back-riwayat">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                    <span class="text-md font-semibold">Riwayat Transasksi</span>
+                </div>
+
+            </section>
+            <!-- riwayat Transasksi cari star-->
+            <section class="px-3 py-30 ">
+                <div class=" bg-white rounded-3xl">
+                    <div class="flex w-full items-center rounded-2xl gap-2 relative">
+                        <label for="Cari" class="mx-2 absolute">
+                            <i class="bi bi-search"></i>
+                        </label>
+                        <div class="flex w-full flex-col gap-3 py-2">
+                            <input type="email" name="search" id="Cari" placeholder="Nice Placeholder"
+                                class="w-full h-12 rounded-2xl focus:ring-fokus px-10 invalid:bg-minus/10 invalid:text-minus bg-white peer">
+                            <p class="absolute hidden peer-invalid:block text-minus top-13">
+                                Masukkan Text anda dengan Benar
+                            </p>
+                        </div>
+                    </div>
+                    <!-- riwayat Transasksi cari end -->
+                    <!-- badaan dari transaksi star -->
+                    <section class="overflow-y-scroll   max-h-100 " id="transaski-main">
+                        <div id="Riwayat-transaksi"
+                            class="w-full bg-white h-[60px] rounded-2xl flex justify-between items-center focus:bg-main hover:bg-main/10">
+                            <div class="flex flex-row justify-center gap-2 items-center">
+                                <button class="mx-3 cursor-pointer text-main text-xl w-max h-max">
+                                    <i class="bi bi-download"></i>
+                                </button>
+                                <div class="flex flex-col py-2 box-border">
+                                    <span class="text-sm font-semibold block py-3">William
+                                        <span class="block opacity-50">123456789</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <span class="text-minus font-semibold">- Rp.154.000,00</span>
+                                <button class="cursor-pointer text-xl">
+                                    <span class="mx-3"><i class="bi bi-caret-right"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                        <hr class="text-amber-300 w-11/12 m-auto">
+                        <div id="Riwayat-transaksi"
+                            class="w-full bg-white h-[60px] rounded-2xl flex justify-between items-center focus:bg-main hover:bg-main/10">
+                            <div class="flex flex-row justify-center gap-2 items-center">
+                                <button class="mx-3 cursor-pointer text-main text-xl w-max h-max">
+                                    <i class="bi bi-download"></i>
+                                </button>
+                                <div class="flex flex-col py-2 box-border">
+                                    <span class="text-sm font-semibold block py-3">Dolf
+                                        <span class="block opacity-50">234362784</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <span class="text-plus font-semibold">+ Rp.200.000,00</span>
+                                <button class="cursor-pointer text-xl">
+                                    <span class="mx-3"><i class="bi bi-caret-right"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                        <hr class="text-amber-300 w-11/12 m-auto">
+                        <div id="Riwayat-transaksi"
+                            class="w-full bg-white h-[60px] rounded-2xl flex justify-between items-center focus:bg-main hover:bg-main/10">
+                            <div class="flex flex-row justify-center gap-2 items-center">
+                                <button class="mx-3 cursor-pointer text-main text-xl w-max h-max">
+                                    <i class="bi bi-download"></i>
+                                </button>
+                                <div class="flex flex-col py-2 box-border">
+                                    <span class="text-sm font-semibold block py-3">Emma
+                                        <span class="block opacity-50">985374278</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <span class="text-minus font-semibold">- Rp.100.000,00</span>
+                                <button class="cursor-pointer text-xl">
+                                    <span class="mx-3"><i class="bi bi-caret-right"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                        <hr class="text-amber-300 w-11/12 m-auto">
+                        <div id="Riwayat-transaksi"
+                            class="w-full bg-white h-[60px] rounded-2xl flex justify-between items-center focus:bg-main hover:bg-main/10">
+                            <div class="flex flex-row justify-center gap-2 items-center">
+                                <button class="mx-3 cursor-pointer text-main text-xl w-max h-max">
+                                    <i class="bi bi-download"></i>
+                                </button>
+                                <div class="flex flex-col py-2 box-border">
+                                    <span class="text-sm font-semibold block py-3">Cristiano Ronaldo
+                                        <span class="block opacity-50">777777777</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <span class="text-plus font-semibold">+ Rp.500.000</span>
+                                <button class="cursor-pointer text-xl">
+                                    <span class="mx-3"><i class="bi bi-caret-right"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                        <hr class="text-amber-300 w-11/12 m-auto">
+                        <div id="Riwayat-transaksi"
+                            class="w-full bg-white h-[60px] rounded-2xl flex justify-between items-center focus:bg-main hover:bg-main/10">
+                            <div class="flex flex-row justify-center gap-2 items-center">
+                                <button class="mx-3 cursor-pointer text-main text-xl w-max h-max">
+                                    <i class="bi bi-download"></i>
+                                </button>
+                                <div class="flex flex-col py-2 box-border">
+                                    <span class="text-sm font-semibold block py-3">Lionel Messi
+                                        <span class="block opacity-50">111222333</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <span class="text-plus font-semibold">+ Rp.300.000,00</span>
+                                <button class="cursor-pointer text-xl">
+                                    <span class="mx-3"><i class="bi bi-caret-right"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                        <hr class="text-amber-300 w-11/12 m-auto">
+
+                        <div id="Riwayat-transaksi"
+                            class="w-full bg-white h-[60px] rounded-2xl flex justify-between items-center focus:bg-main hover:bg-main/10">
+                            <div class="flex flex-row justify-center gap-2 items-center">
+                                <button class="mx-3 cursor-pointer text-main text-xl w-max h-max">
+                                    <i class="bi bi-download"></i>
+                                </button>
+                                <div class="flex flex-col py-2 box-border">
+                                    <span class="text-sm font-semibold block py-3">Neymar Jr
+                                        <span class="block opacity-50">444555666</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <span class="text-minus font-semibold">- Rp.50.000,00</span>
+                                <button class="cursor-pointer text-xl">
+                                    <span class="mx-3"><i class="bi bi-caret-right"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                        <hr class="text-amber-300 w-11/12 m-auto">
+
+                        <div id="Riwayat-transaksi"
+                            class="w-full bg-white h-[60px] rounded-2xl flex justify-between items-center focus:bg-main hover:bg-main/10">
+                            <div class="flex flex-row justify-center gap-2 items-center">
+                                <button class="mx-3 cursor-pointer text-main text-xl w-max h-max">
+                                    <i class="bi bi-download"></i>
+                                </button>
+                                <div class="flex flex-col py-2 box-border">
+                                    <span class="text-sm font-semibold block py-3">Kylian Mbappé
+                                        <span class="block opacity-50">777888999</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <span class="text-plus font-semibold">+ Rp.250.000,00</span>
+                                <button class="cursor-pointer text-xl">
+                                    <span class="mx-3"><i class="bi bi-caret-right"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                        <hr class="text-amber-300 w-11/12 m-auto">
+
+                        <div id="Riwayat-transaksi"
+                            class="w-full bg-white h-[60px] rounded-2xl flex justify-between items-center focus:bg-main hover:bg-main/10">
+                            <div class="flex flex-row justify-center gap-2 items-center">
+                                <button class="mx-3 cursor-pointer text-main text-xl w-max h-max">
+                                    <i class="bi bi-download"></i>
+                                </button>
+                                <div class="flex flex-col py-2 box-border">
+                                    <span class="text-sm font-semibold block py-3">Sadio Mané
+                                        <span class="block opacity-50">222333444</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <span class="text-minus font-semibold">- Rp.75.000,00</span>
+                                <button class="cursor-pointer text-xl">
+                                    <span class="mx-3"><i class="bi bi-caret-right"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                        <hr class="text-amber-300 w-11/12 m-auto">
+                    </section>
+                    <!-- badaan dari transaksi end -->
+                </div>
+        </div>
+        <!-- riwayat transaksi -->
+
+        <!-- acount star -->
+        <div id="akun-main"
+            class="container w-full h-screen flex-col gap-10 absolute top-0 z-50 bg-plus/50 backdrop-blur-lg  md:max-w-sm hidden">
+            <section class="pop-up ">
+                <div class="h-17 bg-white w-full  flex gap-5 items-center fixed px-2.5 z-[50]">
+                    <button class="cursor-pointer" id="back-akun">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                    <span class="text-md font-semibold">Akun</span>
+                </div>
+            </section>
+            <section class="bg-plus pt-7 h-76">
+                <div class="head  mt-20 flex justify-between flex-row items-center">
+                    <div class="p-3 flex flex-row gap-3 items-center">
+                        <div class="w-8 h-8">
+                            <img src="src/img/gambar/WhatsApp Image 2024-05-02 at 20.12.07_da52eb16.jpg" alt=""
+                                class="h-full w-full object-cover rounded-full">
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-[18px] font-bold ">Akbar Maulana</span>
+                            <span class="text-xs">083181289311</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button
+                            class="p-[10px] bg-white w-45 text-sm rounded-2xl flex justify-center gap-2.5 text-main hover:text-white hover:bg-main/80 duration-200 focus:ring-main disabled:saturate-0 disabled:bg-transparent disabled:cursor-not-allowed disabled:opacity-90 cursor-pointer">
+                            <span class="h-4 w-4">
+                                <i class="bi bi-wallet"></i>
+                            </span>
+                            <span class="uppercase"> Tarik Saldo </span>
+                        </button>
+
+                    </div>
+                </div>
+            </section>
+            <section class="px-5 rounded-2xl -my-24 bottom-1/3 w-full">
+                <div class=" w-full  bg-white p-5 rounded-2xl">
+                    <div
+                        class="bg-white max-h-max w-full flex items-center justify-between hover:bg-main/10 rounded-2xl duration-300">
+                        <div class=" h-18 flex items-center">
+                            <button class="text-4xl mx-4 relative group cursor-pointer">
+                                <i class="bi bi-gear group-hover:opacity-0 duration-300"></i>
+                                <i
+                                    class="bi bi-gear-fill absolute left-0 opacity-0 group-hover:opacity-100 duration-300"></i>
+                            </button>
+                            <div class="flex flex-col">
+                                <span class="text-md block">Pengaturan</span>
+                            </div>
+                        </div>
+                        <div class="h-18 flex items-center mx-4 text-2xl relative group ">
+                            <button><i class="bi bi-caret-right "></i></button>
+                            <button class="absolute opacity-0 group-hover:opacity-100 duration-300 cursor-pointer"><i
+                                    class="bi bi-caret-right-fill"></i></button>
+                        </div>
+                    </div>
+                    <hr class="text-amber-300 w-11/12 m-auto">
+                    <div
+                        class="bg-white max-h-max w-full flex items-center justify-between hover:bg-main/10 rounded-2xl duration-300">
+                        <div class=" h-18 flex items-center">
+                            <button class="text-4xl mx-4 relative group cursor-pointer">
+                                <i class="bi bi-question-circle group-hover:opacity-0 duration-300"></i>
+                                <i
+                                    class="bi bi-question-circle-fill absolute left-0 opacity-0 group-hover:opacity-100 duration-300"></i>
+                            </button>
+                            <div class="flex flex-col">
+                                <span class="text-md block">Pusat Bantuan</span>
+                            </div>
+                        </div>
+                        <div class="h-18 flex items-center mx-4 text-2xl relative group ">
+                            <button><i class="bi bi-caret-right "></i></button>
+                            <button class="absolute opacity-0 group-hover:opacity-100 duration-300 cursor-pointer"><i
+                                    class="bi bi-caret-right-fill"></i></button>
+                        </div>
+                    </div>
+                    <hr class="text-amber-300 w-11/12 m-auto">
+                    <div
+                        class="bg-white max-h-max w-full flex items-center justify-between hover:bg-main/10 rounded-2xl duration-300">
+                        <div class=" h-18 flex items-center">
+                            <button class="text-4xl mx-4 relative group cursor-pointer">
+                                <i class="bi bi-journal-bookmark group-hover:opacity-0 duration-300"></i>
+                                <i
+                                    class="bi bi-journal-bookmark-fill absolute left-0 opacity-0 group-hover:opacity-100 duration-300"></i>
+                            </button>
+                            <div class="flex flex-col">
+                                <span class="text-md block">Syarat dan Ketentuan</span>
+                            </div>
+                        </div>
+                        <div class="h-18 flex items-center mx-4 text-2xl relative group ">
+                            <button><i class="bi bi-caret-right "></i></button>
+                            <button class="absolute opacity-0 group-hover:opacity-100 duration-300 cursor-pointer"><i
+                                    class="bi bi-caret-right-fill"></i></button>
+                        </div>
+                    </div>
+                    <hr class="text-amber-300 w-11/12 m-auto">
+                    <div
+                        class="bg-white max-h-max w-full flex items-center justify-between hover:bg-main/10 rounded-2xl duration-300">
+                        <div class=" h-18 flex items-center">
+                            <button class="text-4xl mx-4 relative group cursor-pointer">
+                                <i class="bi bi-exclamation-circle group-hover:opacity-0 duration-300"></i>
+                                <i
+                                    class="bi bi-exclamation-circle-fill absolute left-0 opacity-0 group-hover:opacity-100 duration-300"></i>
+                            </button>
+                            <div class="flex flex-col">
+                                <span class="text-md block">Tentang Danaku</span>
+                            </div>
+                        </div>
+                        <div class="h-18 flex items-center mx-4 text-2xl relative group ">
+                            <button><i class="bi bi-caret-right "></i></button>
+                            <button class="absolute opacity-0 group-hover:opacity-100 duration-300 cursor-pointer"><i
+                                    class="bi bi-caret-right-fill"></i></button>
+                        </div>
+                    </div>
+                    <hr class="text-amber-300 w-11/12 m-auto">
+
+
+
+                </div>
+            </section>
+
+
+        </div>
+
+        <!-- acount end -->
+
+
+
+    </div>
+
+    <script src="src/js/index.js">
+
+    </script>
+</body>
+
+</html>

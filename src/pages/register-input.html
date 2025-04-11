@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Register</title>
+</head>
+
+<body class="bg-main/10  sm:max-w-sm mx-auto">
+    <div class="container flex  flex-col justify-center items-center h-screen gap-3 mx-auto">
+        <div class="">
+            <img src="../img/logo/logo-orange.png" alt="">
+        </div>
+        <div class="text-center">
+            <h1 class="text-xl font-bold">Buat 6 Digit Pin</h1>
+            <span class="text-slate-400 text-sm">Buat 6 digit pin untuk masuk dengan aman</span>
+        </div>
+        <div class="w-full flex flex-col gap-4">
+            <div class="flex w-full items-center rounded-2xl gap-2 relative px-5">
+                <label for="Cari" class="mx-2 absolute">
+                    <i class="bi bi-shield"></i>
+                </label>
+                <div class="flex w-full flex-col gap-3">
+                    <input type="password" name="search" id="Cari" placeholder="6 Digit Pin"
+                        class="w-full h-12 rounded-2xl focus:ring-fokus px-10 invalid:bg-minus/10 invalid:text-minus bg-white peer" />
+                    <p class="absolute hidden peer-invalid:block text-minus top-13">
+                        Masukkan Text anda dengan Benar
+                    </p>
+                </div>
+            </div>
+            <div class="flex w-full items-center rounded-2xl gap-2 relative px-5 mb-4">
+                <label for="Cari" class="mx-2 absolute">
+                    <i class="bi bi-shield-fill"></i>
+                </label>
+                <div class="flex w-full flex-col gap-3">
+                    <input type="password" name="search" id="Cari" placeholder="konfismasi ulang Pin"
+                        class="w-full h-12 rounded-2xl focus:ring-fokus px-10 invalid:bg-minus/10 invalid:text-minus bg-white peer" />
+                    <p class="absolute hidden peer-invalid:block text-minus top-13">
+                        Masukkan Text anda dengan Benar
+                    </p>
+                </div>
+            </div>
+            <div class="px-5 flex flex-col gap-2">
+                <button
+                    class="p-[10px] bg-main w-full rounded-2xl  justify-center gap-2.5 text-white hover:bg-mainhover duration-200 focus:ring-fokus disabled:bg-slate-200 disabled:text-slate-400 disabled:cursor-not-allowed cursor-pointer flex flex-row-reverse">
+                    <span class="h-4 w-4">
+                        <i class="bi bi-caret-right"></i>
+                    </span>
+                    <span class="uppercase"> Lanjutkan </span>
+                </button>
+                <span class="text-center block text-xs">
+                    dengan masuk atau daftar anda sudah setuju dengan <a href=""
+                        class="text-main font-semibold">ketentuan layanan</a> atau <a href=""
+                        class="text-main font-semibold">Kebijakan Privasi </a> Danaku
+                </span>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>
