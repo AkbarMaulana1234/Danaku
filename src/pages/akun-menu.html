@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="../../bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body class="container  md:max-w-sm mx-auto">
+
+    <nav class="fixed bottom-0 w-full z-[100] md:max-w-sm mx-auto" id="nav-button">
+        <section class="nav-bar-bottom">
+            <div class="w-full h-16 bg-white flex flex-row">
+                <a href="dasboard-menu.html"
+                    class="flex flex-col justify-center items-center w-full h-full font-bold group">
+                    <span class="relative flex">
+                        <span>
+                            <i class="bi bi-house-door"></i>
+                        </span>
+                        <span class="absolute opacity-0 group-hover:opacity-100 duration-300">
+                            <i class="bi bi-house-door-fill"></i>
+                        </span>
+                    </span>
+                    <span>Home</span>
+                </a>
+
+                <a href="riwayat-menu.html" id="riwayat"
+                    class="flex flex-col justify-center items-center w-full h-full font-bold group">
+                    <span class="relative flex">
+                        <span>
+                            <i class="bi-hdd-rack"></i>
+                        </span>
+                        <span class="absolute opacity-0 group-hover:opacity-100 duration-300">
+                            <i class="bi bi-hdd-rack-fill"></i>
+                        </span>
+                    </span>
+                    <span>Riwayat</span>
+                </a>
+
+                <a href="akun-menu.html" id="akun"
+                    class="flex flex-col justify-center items-center w-full h-full font-bold group">
+                    <span class="relative flex">
+                        <span>
+                            <i class="bi bi-person"></i>
+                        </span>
+                        <span class="absolute opacity-0 group-hover:opacity-100 duration-300">
+                            <i class="bi bi-person-fill"></i>
+                        </span>
+                    </span>
+                    <span>Akun</span>
+                </a>
+            </div>
+        </section>
+    </nav>
+    <!-- akun menu star -->
+    <div id="akun-main"
+        class="container mx-auto w-full h-screen flex-col gap-10  top-0 z-50 bg-plus/50 backdrop-blur-lg  md:max-w-sm ">
+        <section class="pop-up ">
+            <div class="h-17 bg-white w-full  flex gap-5 items-center fixed px-2.5 z-[50]">
+                <a href="dasboard-menu.html" class="cursor-pointer" id="back-akun">
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+                <span class="text-md font-semibold">Akun</span>
+            </div>
+        </section>
+        <section class="bg-plus pt-7 h-76 px-3">
+            <div class="head  mt-20 flex justify-between flex-row items-center">
+                <div class="p-3 flex flex-row gap-3 items-center">
+                    <div class="w-8 h-8">
+                        <img src="../../src/img/gambar/WhatsApp Image 2024-05-02 at 20.12.07_da52eb16.jpg" alt=""
+                            class="h-full w-full object-cover rounded-full">
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-[18px] font-bold ">Akbar Maulana</span>
+                        <span class="text-xs">083181289311</span>
+                    </div>
+                </div>
+                <div>
+                    <a href="tarik-saldo.html"
+                        class="p-[10px] bg-white w-45 text-sm rounded-2xl flex justify-center gap-2.5 text-main hover:text-white hover:bg-main/80 duration-200 focus:ring-main disabled:saturate-0 disabled:bg-transparent disabled:cursor-not-allowed disabled:opacity-90 cursor-pointer">
+                        <span class="h-4 w-4">
+                            <i class="bi bi-wallet"></i>
+                        </span>
+                        <span class="uppercase"> Tarik Saldo </span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+        <section class="px-5 rounded-2xl -my-24 bottom-1/3 w-full">
+            <div class=" w-full  bg-white p-5 rounded-2xl">
+                <a href="akun-pengaturan.html"
+                    class="bg-white max-h-max w-full flex items-center justify-between hover:bg-main/10 rounded-2xl duration-300">
+                    <div class=" h-18 flex items-center">
+                        <button class="text-2xl mx-4 relative group cursor-pointer">
+                            <i class="bi bi-gear group-hover:opacity-0 duration-300"></i>
+                            <i
+                                class="bi bi-gear-fill absolute left-0 opacity-0 group-hover:opacity-100 duration-300"></i>
+                        </button>
+                        <div class="flex flex-col">
+                            <span class="text-md block">Pengaturan</span>
+                        </div>
+                    </div>
+                    <div class="h-18 flex items-center mx-4 text-2xl relative group ">
+                        <button><i class="bi bi-caret-right "></i></button>
+                        <button class="absolute opacity-0 group-hover:opacity-100 duration-300 cursor-pointer"><i
+                                class="bi bi-caret-right-fill"></i></button>
+                    </div>
+                </a>
+                <hr class="text-amber-300 w-11/12 m-auto">
+                <div
+                    class="bg-white max-h-max w-full flex items-center justify-between hover:bg-main/10 rounded-2xl duration-300">
+                    <div class=" h-18 flex items-center">
+                        <button class="text-2xl mx-4 relative group cursor-pointer">
+                            <i class="bi bi-question-circle group-hover:opacity-0 duration-300"></i>
+                            <i
+                                class="bi bi-question-circle-fill absolute left-0 opacity-0 group-hover:opacity-100 duration-300"></i>
+                        </button>
+                        <div class="flex flex-col">
+                            <span class="text-md block">Pusat Bantuan</span>
+                        </div>
+                    </div>
+                    <div class="h-18 flex items-center mx-4 text-2xl relative group ">
+                        <button><i class="bi bi-caret-right "></i></button>
+                        <button class="absolute opacity-0 group-hover:opacity-100 duration-300 cursor-pointer"><i
+                                class="bi bi-caret-right-fill"></i></button>
+                    </div>
+                </div>
+                <hr class="text-amber-300 w-11/12 m-auto">
+                <div
+                    class="bg-white max-h-max w-full flex items-center justify-between hover:bg-main/10 rounded-2xl duration-300">
+                    <div class=" h-18 flex items-center">
+                        <button class="text-2xl mx-4 relative group cursor-pointer">
+                            <i class="bi bi-journal-bookmark group-hover:opacity-0 duration-300"></i>
+                            <i
+                                class="bi bi-journal-bookmark-fill absolute left-0 opacity-0 group-hover:opacity-100 duration-300"></i>
+                        </button>
+                        <div class="flex flex-col">
+                            <span class="text-md block">Syarat dan Ketentuan</span>
+                        </div>
+                    </div>
+                    <div class="h-18 flex items-center mx-4 text-2xl relative group ">
+                        <button><i class="bi bi-caret-right "></i></button>
+                        <button class="absolute opacity-0 group-hover:opacity-100 duration-300 cursor-pointer"><i
+                                class="bi bi-caret-right-fill"></i></button>
+                    </div>
+                </div>
+                <hr class="text-amber-300 w-11/12 m-auto">
+                <div
+                    class="bg-white max-h-max w-full flex items-center justify-between hover:bg-main/10 rounded-2xl duration-300">
+                    <div class=" h-18 flex items-center">
+                        <button class="text-2xl mx-4 relative group cursor-pointer">
+                            <i class="bi bi-exclamation-circle group-hover:opacity-0 duration-300"></i>
+                            <i
+                                class="bi bi-exclamation-circle-fill absolute left-0 opacity-0 group-hover:opacity-100 duration-300"></i>
+                        </button>
+                        <div class="flex flex-col">
+                            <span class="text-md block">Tentang Danaku</span>
+                        </div>
+                    </div>
+                    <div class="h-18 flex items-center mx-4 text-2xl relative group ">
+                        <button><i class="bi bi-caret-right "></i></button>
+                        <button class="absolute opacity-0 group-hover:opacity-100 duration-300 cursor-pointer"><i
+                                class="bi bi-caret-right-fill"></i></button>
+                    </div>
+                </div>
+                <hr class="text-amber-300 w-11/12 m-auto">
+
+
+
+            </div>
+        </section>
+
+
+    </div>
+
+    <!-- akun menu end -->
+
+
+
+
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

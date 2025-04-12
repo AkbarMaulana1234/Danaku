@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="../../bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body class="container  md:max-w-sm mx-auto">
+
+    <nav class="fixed bottom-0 w-full z-[100] md:max-w-sm mx-auto" id="nav-button">
+        <section class="nav-bar-bottom">
+            <div class="w-full h-16 bg-white flex flex-row">
+                <a href="dasboard-menu.html"
+                    class="flex flex-col justify-center items-center w-full h-full font-bold group">
+                    <span class="relative flex">
+                        <span>
+                            <i class="bi bi-house-door"></i>
+                        </span>
+                        <span class="absolute opacity-0 group-hover:opacity-100 duration-300">
+                            <i class="bi bi-house-door-fill"></i>
+                        </span>
+                    </span>
+                    <span>Home</span>
+                </a>
+
+                <a href="riwayat-menu.html" id="riwayat"
+                    class="flex flex-col justify-center items-center w-full h-full font-bold group">
+                    <span class="relative flex">
+                        <span>
+                            <i class="bi-hdd-rack"></i>
+                        </span>
+                        <span class="absolute opacity-0 group-hover:opacity-100 duration-300">
+                            <i class="bi bi-hdd-rack-fill"></i>
+                        </span>
+                    </span>
+                    <span>Riwayat</span>
+                </a>
+
+                <a href="akun-menu.html" id="akun"
+                    class="flex flex-col justify-center items-center w-full h-full font-bold group">
+                    <span class="relative flex">
+                        <span>
+                            <i class="bi bi-person"></i>
+                        </span>
+                        <span class="absolute opacity-0 group-hover:opacity-100 duration-300">
+                            <i class="bi bi-person-fill"></i>
+                        </span>
+                    </span>
+                    <span>Akun</span>
+                </a>
+            </div>
+        </section>
+    </nav>
+    <!-- akun menu star -->
+    <div id="akun-main"
+        class="container mx-auto w-full h-screen flex-col gap-10  top-0 z-50 bg-plus/50 backdrop-blur-lg  md:max-w-sm ">
+        <section class="pop-up ">
+            <div class="h-17 bg-white w-full  flex gap-5 items-center fixed px-2.5 z-[50]">
+                <a href="akun-menu.html" class="cursor-pointer" id="back-akun">
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+                <span class="text-md font-semibold">tarik saldo</span>
+            </div>
+        </section>
+        <!-- trik saldo  -->
+        <section class="penarikan-dana pt-20 px-3">
+            <div class="bg-white px-3 rounded-2xl">
+                <form action="" class="flex flex-col gap-3 pb-3 p-3">
+                    <div class="flex flex-col gap-1">
+                        <label for="nominal" class="uppercase">Nominal Penarikan</label>
+                        <div class="flex w-full items-center rounded-2xl gap-2 relative">
+                            <label for="nominal" class="mx-2 absolute">
+                                <i class="bi bi-cash"></i>
+                            </label>
+                            <div class="flex w-full flex-col gap-3 border rounded-2xl border-main">
+                                <input type="number" name="nominal" id="nominal"
+                                    placeholder="Masukkan nominal penarikan"
+                                    class="w-full h-12 rounded-2xl focus:ring-fokus px-10 bg-white">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <label for="bank" class="uppercase">Pilih Bank</label>
+                        <div class="flex w-full items-center rounded-2xl gap-2 relative">
+                            <label for="bank" class="mx-2 absolute">
+                                <i class="bi bi-bank"></i>
+                            </label>
+                            <div class="flex w-full flex-col gap-3 border rounded-2xl border-main">
+                                <select name="bank" id="bank"
+                                    class="w-full h-12 rounded-2xl focus:ring-fokus bg-white px-10">
+                                    <option value="" disabled selected>Pilih Bank</option>
+                                    <option value="bank1">Bank 1</option>
+                                    <option value="bank2">Bank 2</option>
+                                    <option value="bank3">Bank 3</option>
+                                    <option value="bank4">Bank 4</option>
+                                    <!-- Tambahkan opsi bank lainnya sesuai kebutuhan -->
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button
+                        class="p-[10px] bg-transparent w-full border-main border-2 rounded-2xl flex justify-center gap-2.5 text-main hover:text-white hover:bg-main duration-200 focus:ring-main disabled:saturate-0 disabled:bg-transparent disabled:cursor-not-allowed disabled:opacity-90 cursor-pointer">
+                        <span class="h-4 w-4">
+                            <i class="bi bi-arrow-down-circle"></i>
+                        </span>
+                        <span class="uppercase"> Tarik Dana </span>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- akun menu end -->
+
+
+
+
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

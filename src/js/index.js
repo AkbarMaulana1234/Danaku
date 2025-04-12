@@ -44,30 +44,15 @@ eye.addEventListener("click", () => {
   eye.querySelector(":last-of-type").classList.toggle("hidden");
 });
 // eye button efek end
-// riwayat
-const riwayat = document.getElementById("riwayat");
-const riwayaMain = document.getElementById("riwayat-main");
-const backRiwayat = document.getElementById("back-riwayat");
-riwayat.addEventListener("click", (e) => {
-  e.preventDefault();
-  riwayaMain.classList.toggle("hidden");
-  riwayaMain.classList.toggle("flex");
-});
-backRiwayat.addEventListener("click", () => {
-  riwayaMain.classList.toggle("hidden");
-  riwayaMain.classList.toggle("flex");
-});
 
-//akun
-const akun = document.getElementById("akun-main");
-const btnAkun = document.getElementById("akun");
-const backAkun = document.getElementById("back-akun");
-btnAkun.addEventListener("click", (e) => {
-  e.preventDefault();
-  akun.classList.toggle("hidden");
-  akun.classList.toggle("scale-in");
+//buka detail
+const bukaDetail = document.getElementById("buka-detail");
+const detail = document.getElementById("detail");
+const backDetail = document.getElementById("back-detail");
+console.log(bukaDetail);
+bukaDetail.addEventListener("click", (e) => {
+  detail.classList.toggle("hidden");
 });
-backAkun.addEventListener("click", () => {
-  akun.classList.toggle("hidden");
-  akun.classList.toggle("scale-in");
+backDetail.addEventListener("click", (e) => {
+  detail.classList.toggle("hidden");
 });

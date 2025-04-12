@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="../../bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body class=" container  md:max-w-sm mx-auto">
+    <nav class="fixed bottom-0 w-full z-[100] md:max-w-sm" id="nav-button">
+        <section class="nav-bar-bottom mx-auto">
+            <div class="w-full h-16 bg-white flex flex-row">
+                <a href="dasboard-menu.html"
+                    class="flex flex-col justify-center items-center w-full h-full font-bold group">
+                    <span class="relative flex">
+                        <span>
+                            <i class="bi bi-house-door"></i>
+                        </span>
+                        <span class="absolute opacity-0 group-hover:opacity-100 duration-300">
+                            <i class="bi bi-house-door-fill"></i>
+                        </span>
+                    </span>
+                    <span>Home</span>
+                </a>
+
+                <a href="riwayat-menu.html" id="riwayat"
+                    class="flex flex-col justify-center items-center w-full h-full font-bold group">
+                    <span class="relative flex">
+                        <span>
+                            <i class="bi-hdd-rack"></i>
+                        </span>
+                        <span class="absolute opacity-0 group-hover:opacity-100 duration-300">
+                            <i class="bi bi-hdd-rack-fill"></i>
+                        </span>
+                    </span>
+                    <span>Riwayat</span>
+                </a>
+
+                <a href="akun-menu.html" id="akun"
+                    class="flex flex-col justify-center items-center w-full h-full font-bold group">
+                    <span class="relative flex">
+                        <span>
+                            <i class="bi bi-person"></i>
+                        </span>
+                        <span class="absolute opacity-0 group-hover:opacity-100 duration-300">
+                            <i class="bi bi-person-fill"></i>
+                        </span>
+                    </span>
+                    <span>Akun</span>
+                </a>
+            </div>
+        </section>
+    </nav>
+    <!-- akun menu star -->
+    <section class="pop-up fixed top-0 w-full z-[100] ">
+        <div class="h-17 px-3 bg-white w-full flex gap-5 items-center ">
+            <a href="akun-menu.html" class="cursor-pointer" id="back-akun">
+                <i class="bi bi-arrow-left"></i>
+            </a>
+            <span class="text-md font-semibold">Pengaturan akun</span>
+        </div>
+    </section>
+    <div id="pengaturan-akun "
+        class="container w-full mx-auto flex-col gap-10 h-full  bg-plus/50 backdrop-blur-lg  md:max-w-sm ">
+        <!-- bagian informasi personal star -->
+        <section class="pb-40">
+            <section class="pengaturan-akun pt-20 px-3">
+                <div class="bg-white px-3 rounded-2xl">
+                    <h1 class="font-bold text-xl p-3">informasi Personal</h1>
+                    <div class="h-25 w-25 mx-auto my-5">
+                        <img src="../img/gambar/WhatsApp Image 2024-05-02 at 20.12.07_da52eb16.jpg" alt=""
+                            class="h-full w-full object-cover rounded-full">
+                    </div>
+                    <div>
+                        <div class="flex flex-row  justify-between py-4">
+                            <div class="flex flex-col gap-2 text-slate-500">
+                                <span>Nama</span>
+                                <span>tanggal lahir</span>
+                                <span>jenis Kelamamin</span>
+                                <span>ID Pengguna</span>
+                            </div>
+                            <div class="flex flex-col gap-2 text-right font-semibold">
+                                <span id="status-trasaksi">Akbar Maulana</span>
+                                <span id="nama-pengirim">20 april 2005</span>
+                                <span id="no-rek-pengirim">Laki Laki</span>
+                                <span id="waktu-transaksi">083181289311</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- bagian informasi personal end -->
+
+            <!-- keamana pin star -->
+            <section class="pengaturan-akun pt-20 px-3">
+                <div class="bg-white px-3 rounded-2xl">
+                    <h1 class="font-bold text-xl p-3">Keamanan PIN</h1>
+                    <form action="" class=" flex flex-col gap-3 pb-3">
+                        <div class="flex flex-col gap-1">
+                            <label for="p-lama" class="uppercase">Pin Lama</label>
+                            <div class="flex w-full items-center rounded-2xl gap-2 relative">
+                                <label for="Cari" class="mx-2 absolute">
+                                    <i class="bi bi-shield-lock"></i>
+                                </label>
+                                <div class="flex w-full flex-col gap-3 border rounded-2xl border-main">
+                                    <input type="password" name="search" id="p-lama"
+                                        placeholder="Masukkan password lama"
+                                        class="w-full h-12 rounded-2xl focus:ring-fokus px-10 invalid:bg-minus/10 invalid:text-minus bg-white peer">
+                                    <p class="absolute hidden peer-invalid:block text-minus top-13">
+                                        Masukkan Text anda dengan Benar
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <label for="p-baru" class="uppercase">Pin Baru</label>
+                            <div class="flex w-full items-center rounded-2xl gap-2 relative">
+                                <label for="Cari" class="mx-2 absolute">
+                                    <i class="bi bi-shield-lock"></i>
+                                </label>
+                                <div class="flex w-full flex-col gap-3 border rounded-2xl border-main">
+                                    <input type="password" name="search" id="p-baru"
+                                        placeholder="Masukkan password Baru"
+                                        class="w-full h-12 rounded-2xl focus:ring-fokus px-10 invalid:bg-minus/10 invalid:text-minus bg-white peer">
+                                    <p class="absolute hidden peer-invalid:block text-minus top-13">
+                                        Masukkan Text anda dengan Benar
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <label for="p-konfirmasi" class="uppercase">Konfirmasi Password</label>
+                            <div class="flex w-full items-center rounded-2xl gap-2 relative">
+                                <label for="Cari" class="mx-2 absolute">
+                                    <i class="bi bi-shield-lock"></i>
+                                </label>
+                                <div class="flex w-full flex-col gap-3 border rounded-2xl border-main">
+                                    <input type="password" name="search" id="p-konfirmasi"
+                                        placeholder="Masukkan password lama"
+                                        class="w-full h-12 rounded-2xl focus:ring-fokus px-10 invalid:bg-minus/10 invalid:text-minus bg-white peer">
+                                    <p class="absolute hidden peer-invalid:block text-minus top-13">
+                                        Masukkan Text anda dengan Benar
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="p-[10px] bg-transparent w-full border-main border-2 rounded-2xl flex justify-center gap-2.5 text-main hover:text-white hover:bg-main duration-200 focus:ring-main disabled:saturate-0 disabled:bg-transparent disabled:cursor-not-allowed disabled:opacity-90 cursor-pointer">
+                            <span class="h-4 w-4">
+                                <i class="bi bi-floppy"></i>
+                            </span>
+                            <span class="uppercase"> Simpan </span>
+                        </button>
+                    </form>
+
+                </div>
+
+            </section>
+            <!-- keamana pin end -->
+            <section class="pengaturan-akun pt-20 px-3">
+                <div class="bg-white px-3 rounded-2xl">
+                    <h1 class="font-bold text-xl p-3">Penarikan dana</h1>
+                    <form action="" class=" flex flex-col gap-3 pb-3">
+                        <div class="flex flex-col gap-1">
+                            <label for="bank" class="uppercase">Pilih Bank</label>
+                            <div class="flex w-full items-center rounded-2xl gap-2 relative">
+                                <label for="bank" class="mx-2 absolute">
+                                    <i class="bi bi-bank"></i>
+                                </label>
+                                <div class="flex w-full flex-col gap-3 border rounded-2xl border-main">
+                                    <select name="bank" id="bank"
+                                        class="w-full h-12 rounded-2xl focus:ring-fokus bg-white px-10">
+                                        <option value="" disabled selected>Pilih Bank</option>
+                                        <option value="bank1">Bank 1</option>
+                                        <option value="bank2">Bank 2</option>
+                                        <option value="bank3">Bank 3</option>
+                                        <option value="bank4">Bank 4</option>
+                                        <!-- Tambahkan opsi bank lainnya sesuai kebutuhan -->
+                                    </select>
+                                    <p class="absolute hidden peer-invalid:block text-minus top-13">
+                                        Silakan pilih bank yang tersedia
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <label for="nama" class="uppercase">nama di rekening</label>
+                            <div class="flex w-full items-center rounded-2xl gap-2 relative">
+                                <label for="Cari" class="mx-2 absolute">
+                                    <i class="bi bi-person"></i>
+                                </label>
+                                <div class="flex w-full flex-col gap-3 border rounded-2xl border-main">
+                                    <input type="text" name="search" id="nama" placeholder="Masukkan nama anda"
+                                        class="w-full h-12 rounded-2xl focus:ring-fokus px-10 invalid:bg-minus/10 invalid:text-minus bg-white peer">
+                                    <p class="absolute hidden peer-invalid:block text-minus top-13">
+                                        Masukkan Text anda dengan Benar
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <label for="nomorrek" class="uppercase">no rekening</label>
+                            <div class="flex w-full items-center rounded-2xl gap-2 relative">
+                                <label for="Cari" class="mx-2 absolute">
+                                    <i class="bi bi-wallet"></i>
+                                </label>
+                                <div class="flex w-full flex-col gap-3 border rounded-2xl border-main">
+                                    <input type="text" name="search" id="nomorrek" placeholder="Masukkan no rekening"
+                                        class="w-full h-12 rounded-2xl focus:ring-fokus px-10 invalid:bg-minus/10 invalid:text-minus bg-white peer">
+                                    <p class="absolute hidden peer-invalid:block text-minus top-13">
+                                        Masukkan Text anda dengan Benar
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="p-[10px] bg-transparent w-full border-main border-2 rounded-2xl flex justify-center gap-2.5 text-main hover:text-white hover:bg-main duration-200 focus:ring-main disabled:saturate-0 disabled:bg-transparent disabled:cursor-not-allowed disabled:opacity-90 cursor-pointer">
+                            <span class="h-4 w-4">
+                                <i class="bi bi-floppy"></i>
+                            </span>
+                            <span class="uppercase"> Simpan </span>
+                        </button>
+                    </form>
+
+                </div>
+
+            </section>
+        </section>
+
+
+
+    </div>
+
+    <!-- akun menu end -->
+
+
+
+
+    <script src="../js/index.js"></script>
+</body>
+
+</html>
